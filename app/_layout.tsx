@@ -41,7 +41,7 @@ export default function HomeScreen() {
   const setOperator = (nextOp: string) => {
     if (display === "Erro") return;
 
-    // Se já tem operação e já digitou o B, calcula antes (ex.: 2 + 3 + 4)
+    
     if (op && a !== null && !waitingB) {
       const res = calc(a, op, display);
       setDisplay(res);
